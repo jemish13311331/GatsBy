@@ -3,6 +3,7 @@ import React from "react";
 import { Education } from "../Component/Education";
 import { Intro } from "../Component/Intro";
 import { Projects } from "../Component/Projects";
+import { Skills } from "../Component/Skills";
 import { WorkExperience } from "../Component/WorkExperience";
 import "./index.css";
 
@@ -20,6 +21,7 @@ const IndexPage = () => {
             degree
             major
             percentage
+            skills
             projects {
               description
               name
@@ -60,14 +62,24 @@ const IndexPage = () => {
               <Education data={data} />
             </div>
           </div>
-          <div className="">
-            <div className="workexperience">
-              <WorkExperience
-                data={data?.allMdx?.nodes?.find(
-                  (val) => val?.frontmatter?.experience !== null
-                )}
-              />
+          <div>
+            <div className="work-skill-box">
+              <div className="workexperience">
+                <WorkExperience
+                  data={data?.allMdx?.nodes?.find(
+                    (val) => val?.frontmatter?.experience !== null
+                  )}
+                />
+              </div>
+              <div className="skill-box">
+                <Skills
+                  data={data?.allMdx?.nodes?.find(
+                    (val) => val?.frontmatter?.skills !== null
+                  )}
+                />
+              </div>
             </div>
+
             <div className="projects">
               <Projects
                 data={data?.allMdx?.nodes?.find(
