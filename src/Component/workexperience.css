@@ -1,0 +1,27 @@
+.experience-box {
+  margin: 10px 0px 10px 0px;
+}
+
+.wexperience-box {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #e9e9ec;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-table {
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+  border-width: inherit 100%;
+}
+.experience-table :hover {
+  margin-top: 10px;
+  background-color: rgba(245, 245, 245, 0.788);
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}

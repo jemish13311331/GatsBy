@@ -1,0 +1,11 @@
+.main-block {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px 10px 0px;
+}
+
+.details {
+  margin-left: 5%;
+  width: 100;
+  row-gap: 10;
+}

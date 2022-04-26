@@ -1,0 +1,28 @@
+.project-box {
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px #e9e9ec;
+  margin: 10px 0px 10px 10px;
+}
+
+.project-table {
+  margin-top: 10px;
+  border-bottom: 2px solid black;
+}
+.project-table :hover {
+  margin-top: 10px;
+  background-color: rgba(245, 245, 245, 0.788);
+}
+
+tr {
+  padding: 1%;
+}
+td {
+  width: fit-content;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}

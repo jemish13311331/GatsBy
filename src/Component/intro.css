@@ -1,0 +1,13 @@
+.profileImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.title {
+  text-align: center;
+  color: gray;
+}
+.description {
+  text-align: center;
+}
