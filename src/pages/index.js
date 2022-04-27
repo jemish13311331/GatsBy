@@ -1,5 +1,6 @@
-import { graphql, Link, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import Helmet from "react-helmet";
 import { Education } from "../Component/Education";
 import { Intro } from "../Component/Intro";
 import { Projects } from "../Component/Projects";
@@ -7,8 +8,9 @@ import { Skills } from "../Component/Skills";
 import { WorkExperience } from "../Component/WorkExperience";
 import "./index.css";
 
-// markup
+//component to render file on "/" route
 const IndexPage = () => {
+  //static query to fetch data from markdown file
   const data = useStaticQuery(graphql`
     query {
       allMdx {
@@ -46,12 +48,18 @@ const IndexPage = () => {
   `);
   return (
     <main>
+      <Helmet>
+        {" "}
+        skills, project, experience, education
+        <meta charSet="utf-8" />
+        <title>Jemish's Realm</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="top-box">
         <div className="main-box">
           <div className="box1">
             {" "}
             <div className="simple-box">
-              {console.log(data)}
               <Intro
                 data={data?.allMdx?.nodes?.find(
                   (val) => val?.frontmatter?.title === "FULLSTACK DEVELOPER"

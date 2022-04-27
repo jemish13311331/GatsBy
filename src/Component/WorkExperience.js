@@ -1,6 +1,7 @@
 import React from "react";
 import "./workexperience.css";
 
+//component to render workexperience
 export const WorkExperience = ({ data }) => {
   return (
     <div className="wexperience-box">

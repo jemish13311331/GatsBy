@@ -1,6 +1,7 @@
 import React from "react";
 import "./projects.css";
 
+//component to render projects
 export const Projects = ({ data }) => {
   return (
     <div className="project-box">

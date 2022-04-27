@@ -3,6 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as React from "react";
 
+//component to render dynamic page according to route
 const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.img1);
   return (
@@ -17,6 +18,8 @@ const BlogPost = ({ data }) => {
     </div>
   );
 };
+
+//query to fetch dynamic data according to route
 export const query = graphql`
   query ($id: String!) {
     mdx(id: { eq: $id }) {

@@ -2,10 +2,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import "./education.css";
 
+//component to render educations
 export const Education = ({ data }) => {
   return (
     <div>
-      {console.log(data)}
       <div className="title">Education</div>
       <div>
         {data?.allMdx?.nodes

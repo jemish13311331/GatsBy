@@ -3,12 +3,12 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import React from "react";
 import "./intro.css";
 
+//component to render intro
 export const Intro = ({ data }) => {
   if (data) {
     const image = getImage(data?.frontmatter?.img1);
     return (
       <div>
-        {console.log(data)}
         <div className="profileImage">
           <GatsbyImage
             style={{ borderRadius: "50%", width: 100 }}

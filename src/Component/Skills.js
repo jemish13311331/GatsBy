@@ -1,6 +1,7 @@
 import React from "react";
 import "./skills.css";
 
+//component to render skills
 export const Skills = ({ data }) => {
   return (
     <div className="skills">
@@ -13,7 +14,6 @@ export const Skills = ({ data }) => {
           })}
         </ul>
       </div>
-      {console.log(data)}
     </div>
   );
 };
