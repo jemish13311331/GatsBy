@@ -2,7 +2,6 @@ import * as React from "react";
 const SSRPage = ({ serverData }) => (
   <main>
     <h1>SSR Page with Dogs</h1>
-    <img alt="Happy dog" src={serverData.message} />
     <ol>
       {serverData?.map((val, index) => {
         return <li>{val?.title}</li>;

@@ -58,7 +58,6 @@ const IndexPage = () => {
       <div className="top-box">
         <div className="main-box">
           <div className="box1">
-            {" "}
             <div className="simple-box">
               <Intro
                 data={data?.allMdx?.nodes?.find(
