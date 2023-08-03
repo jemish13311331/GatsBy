@@ -5,19 +5,28 @@ import "./education.css";
 //component to render educations
 export const Education = ({ data }) => {
   return (
-    <div>
-      <div className="title">Education</div>
+    <div className="education">
+      <div className="title">
+        <div className="line">
+          <hr />
+        </div>
+        <div>Education</div>
+        <div className="line">
+          <hr />
+        </div>
+      </div>
       <div>
         {data?.allMdx?.nodes
           ?.filter((val) => val?.frontmatter?.percentage !== null)
-          ?.map((val, index) => {
+          ?.reverse()
+          .map((val, index) => {
             return (
               <div className="main-block" key={index}>
                 <div className="img1">
                   <GatsbyImage
                     image={getImage(val?.frontmatter?.img1)}
                     alt="Hello Images"
-                    style={{ width: 50, height: 50, borderRadius: "50%" }}
+                    style={{ width: 70, height: 70, borderRadius: "50%" }}
                   />
                 </div>
                 <div className="details">

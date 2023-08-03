@@ -1,12 +1,14 @@
 .experience-box {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px 0px 0px;
+  /* box-shadow: 1px 1px #e9e9ec; */
+  color: rgb(98, 95, 95);
 }
 
 .wexperience-box {
-  background-color: rgb(255, 255, 255);
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 0px 10px;
   border-radius: 10px;
-  box-shadow: 1px 1px #e9e9ec;
+  /* box-shadow: 1px 1px #e9e9ec; */
+  width: 600px;
 }
 
 .experience-table {
@@ -21,4 +23,7 @@
 table {
   border-collapse: separate;
   border-spacing: 0 1em;
+}
+.wbox {
+  margin-top: 20px;
 }

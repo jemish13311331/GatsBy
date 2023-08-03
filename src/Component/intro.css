@@ -3,11 +3,40 @@
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
 }
-.title {
-  text-align: center;
-  color: gray;
+.ant-avatar-string {
+  width: max-content;
+  height: max-content;
 }
+
 .description {
   text-align: center;
+}
+.top-intro {
+  display: flex;
+  height: fit-content;
+}
+.name {
+  color: purple;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.fname {
+  color: purple;
+  font-weight: bolder;
+  font-size: 55px;
+}
+.gatsby-image-wrapper:hover {
+  box-shadow: 5px 6px purple;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  align-content: center;
+  color: purple;
 }

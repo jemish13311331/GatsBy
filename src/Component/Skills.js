@@ -5,7 +5,15 @@ import "./skills.css";
 export const Skills = ({ data }) => {
   return (
     <div className="skills">
-      <div className="title">Skills</div>
+      <div className="title">
+        <div className="line">
+          <hr />
+        </div>
+        <div>Skills</div>
+        <div className="line">
+          <hr />
+        </div>
+      </div>
       <div>
         <ul>
           {" "}

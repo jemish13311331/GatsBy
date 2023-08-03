@@ -1,10 +1,9 @@
 .project-box {
-  background-color: rgb(255, 255, 255);
-  width: fit-content;
+  width: 600px;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  box-shadow: 1px 1px #e9e9ec;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 10px 0px 10px;
+  /* box-shadow: 1px 1px #e9e9ec; */
 }
 
 .project-table {
@@ -13,7 +12,6 @@
 }
 .project-table :hover {
   margin-top: 10px;
-  background-color: rgba(245, 245, 245, 0.788);
 }
 
 tr {

@@ -5,7 +5,15 @@ import "./projects.css";
 export const Projects = ({ data }) => {
   return (
     <div className="project-box">
-      <div className="title">Projects</div>
+      <div className="title">
+        <div className="line">
+          <hr />
+        </div>
+        <div>Projects</div>
+        <div className="line">
+          <hr />
+        </div>
+      </div>
       <div>
         {data?.frontmatter?.projects?.map((val, index) => {
           return (
