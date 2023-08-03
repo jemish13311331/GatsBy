@@ -1,7 +1,6 @@
 .main-block {
   display: flex;
   margin: 10px 0px 10px 0px;
-  width: 600px;
   /* box-shadow: 1px 1px #e9e9ec; */
 }
 
@@ -11,5 +10,5 @@
   row-gap: 10;
 }
 .education {
-  width: 600px;
+  width: 50%;
 }

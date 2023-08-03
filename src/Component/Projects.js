@@ -21,15 +21,15 @@ export const Projects = ({ data }) => {
               <table className="project-table">
                 <tbody>
                   <tr>
-                    <td>Project-Name:</td>
+                    <td className="title1">Project-Name:</td>
                     <td>{val?.name + " (" + val?.organization + ")"}</td>
                   </tr>
                   <tr>
-                    <td>Description:</td>
+                    <td className="title1">Description:</td>
                     <td>{val?.description}</td>
                   </tr>
                   <tr>
-                    <td>Tech stack:</td>
+                    <td className="title1">Tech stack:</td>
                     <td>{val?.techstack}</td>
                   </tr>
                 </tbody>

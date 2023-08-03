@@ -11,6 +11,10 @@ import InstagramOutlined from "@ant-design/icons/lib/icons/InstagramOutlined";
 import LinkedinOutlined from "@ant-design/icons/lib/icons/LinkedinOutlined";
 import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";
 import Typed from "typed.js";
+import MailOutlined from "@ant-design/icons/lib/icons/MailOutlined";
+import Icon from "@ant-design/icons/lib/components/Icon";
+import MenuOutlined from "@ant-design/icons/lib/icons/MenuOutlined";
+import { Menu } from "antd";
 
 //component to render file on "/" route
 const IndexPage = () => {
@@ -19,6 +23,7 @@ const IndexPage = () => {
   // const [isSkillVisible, setIsSkillVisible] = useState(false);
   // const [isProjectAvailable, setIsProjectAvailable] = useState(false);
   const [loaderFlag, setLoaderFlag] = useState(true);
+  const [displayMenu, setDisplayMenu] = useState(false);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -60,7 +65,13 @@ const IndexPage = () => {
       }
     }
   `);
+  function sentoMail() {
+    window.location = "mailto:italiyajemish99@gmail.com";
+  }
 
+  function sendToGitHub() {
+    navigate("https://github.com/jemish-i-simformsolutions?tab=repositories");
+  }
   useEffect(() => {
     // image2=getImage(data?.allMdx?.nodes?.find(val=>val?.frontmatter?.title=="skills")?.frontmatter?.img1)
     const typed = new Typed(
@@ -79,7 +90,7 @@ const IndexPage = () => {
   }, []);
   setTimeout(() => {
     setLoaderFlag(false);
-  }, 1000);
+  }, 4000);
 
   function toggleButtonClicked(val) {
     if (val == "skills") {
@@ -138,6 +149,31 @@ const IndexPage = () => {
             Projects
           </div>
         </div>
+        <div className="menu">
+          <MenuOutlined onClick={() => setDisplayMenu(!displayMenu)} />
+          {displayMenu ? (
+            <Menu
+              mode="inline"
+              defaultSelectedKeys={["1"]}
+              defaultOpenKeys={["sub1"]}
+            >
+              <Menu.Item onClick={() => toggleButtonClicked("education")}>
+                Education
+              </Menu.Item>
+              <Menu.Item onClick={() => toggleButtonClicked("experience")}>
+                Experience
+              </Menu.Item>
+              <Menu.Item onClick={() => toggleButtonClicked("skills")}>
+                skills
+              </Menu.Item>
+              <Menu.Item onClick={() => toggleButtonClicked("project")}>
+                Projects
+              </Menu.Item>
+            </Menu>
+          ) : (
+            ""
+          )}
+        </div>
         <div className="top-box">
           <div className="main-box">
             <div className="box1">
@@ -175,20 +211,25 @@ const IndexPage = () => {
                 <div ref={ref2} className="ebox">
                   <Education data={data} />
                 </div>
-                )
               </div>
             </div>
           </div>
         </div>
         <div className="icons">
-          <InstagramOutlined style={{ fontSize: "30px", color: "purple" }} />
+          <MailOutlined
+            onClick={() => sentoMail()}
+            style={{ fontSize: "30px", color: "purple" }}
+          />
           <LinkedinOutlined
             onClick={() =>
               navigate("https://www.linkedin.com/in/jemish-italiya-2644591b5/")
             }
             style={{ fontSize: "30px", color: "purple" }}
           />
-          <GithubOutlined style={{ fontSize: "30px", color: "purple" }} />
+          <GithubOutlined
+            onClick={() => sendToGitHub()}
+            style={{ fontSize: "30px", color: "purple" }}
+          />
         </div>
         <div className="email">
           <div>jitaliya@asu.edu</div>

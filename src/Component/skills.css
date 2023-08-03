@@ -3,5 +3,12 @@
   border-radius: 10px;
   /* box-shadow: 1px 1px #e9e9ec; */
   margin: 10px 0px 0px 10px;
-  width: 600px;
+  width: 50%;
+}
+ul {
+  list-style-type: disc;
+}
+li::marker {
+  color: purple;
+  border: 2pc solid purple;
 }
