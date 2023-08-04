@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklearn_at_most_capacity=self.webpackChunklearn_at_most_capacity||[]).push([[479],{7720:function(e,l,t){t.r(l);var a=t(7294);l.default=e=>{let{serverData:l}=e;return a.createElement("main",null,a.createElement("h1",null,"SSR Page with Dogs"),a.createElement("ol",null,null==l?void 0:l.map(((e,l)=>a.createElement("li",null,null==e?void 0:e.title)))))}}}]);
+//# sourceMappingURL=component---src-pages-ssr-js-4f3affc78dab10f2ab62.js.map
