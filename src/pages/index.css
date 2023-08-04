@@ -175,16 +175,18 @@ hr {
   .top-intro {
     display: flex;
     flex-direction: column;
+    left: 0;
   }
   .skills {
     width: 100%;
+    margin-left: -10px;
   }
   .menu {
     position: absolute;
     display: flex;
     float: right;
     width: 200px;
-    right: 0;
+    right: 5px;
     position: absolute;
     flex-direction: row-reverse;
     z-index: 100;
@@ -204,9 +206,11 @@ hr {
   }
   .wexperience-box {
     width: 100%;
+    margin-left: -10px;
   }
   .project-box {
     width: 100%;
+    margin-left: -10px;
   }
 
   .features {

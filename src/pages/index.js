@@ -15,6 +15,8 @@ import MailOutlined from "@ant-design/icons/lib/icons/MailOutlined";
 import Icon from "@ant-design/icons/lib/components/Icon";
 import MenuOutlined from "@ant-design/icons/lib/icons/MenuOutlined";
 import { Menu } from "antd";
+import MenuFoldOutlined from "@ant-design/icons/lib/icons/MenuFoldOutlined";
+import MenuUnfoldOutlined from "@ant-design/icons/lib/icons/MenuUnfoldOutlined";
 
 //component to render file on "/" route
 const IndexPage = () => {
@@ -150,7 +152,11 @@ const IndexPage = () => {
           </div>
         </div>
         <div className="menu">
-          <MenuOutlined onClick={() => setDisplayMenu(!displayMenu)} />
+          {displayMenu ? (
+            <MenuUnfoldOutlined onClick={() => setDisplayMenu(!displayMenu)} />
+          ) : (
+            <MenuFoldOutlined onClick={() => setDisplayMenu(!displayMenu)} />
+          )}
           {displayMenu ? (
             <Menu
               mode="inline"
