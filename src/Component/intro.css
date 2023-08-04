@@ -28,9 +28,7 @@
   font-weight: bolder;
   font-size: 55px;
 }
-.gatsby-image-wrapper:hover {
-  box-shadow: 5px 6px purple;
-}
+
 .titles {
   display: flex;
   flex-direction: column;

@@ -150,12 +150,28 @@ const IndexPage = () => {
           >
             Projects
           </div>
+          <div className="button">
+            <a
+              href={`/static/Resume_Jemish.pdf`}
+              target="_blank"
+              rel="noreferrer"
+              id="email"
+            >
+              Resume
+            </a>
+          </div>
         </div>
         <div className="menu">
           {displayMenu ? (
-            <MenuUnfoldOutlined onClick={() => setDisplayMenu(!displayMenu)} />
+            <MenuUnfoldOutlined
+              style={{ fontSize: "32px" }}
+              onClick={() => setDisplayMenu(!displayMenu)}
+            />
           ) : (
-            <MenuFoldOutlined onClick={() => setDisplayMenu(!displayMenu)} />
+            <MenuFoldOutlined
+              style={{ fontSize: "32px" }}
+              onClick={() => setDisplayMenu(!displayMenu)}
+            />
           )}
           {displayMenu ? (
             <Menu
@@ -163,6 +179,16 @@ const IndexPage = () => {
               defaultSelectedKeys={["1"]}
               defaultOpenKeys={["sub1"]}
             >
+              <Menu.Item>
+                <a
+                  href={`/static/Resume_Jemish.pdf`}
+                  target="_blank"
+                  rel="noreferrer"
+                  id="email"
+                >
+                  Resume
+                </a>
+              </Menu.Item>
               <Menu.Item onClick={() => toggleButtonClicked("education")}>
                 Education
               </Menu.Item>
@@ -170,7 +196,7 @@ const IndexPage = () => {
                 Experience
               </Menu.Item>
               <Menu.Item onClick={() => toggleButtonClicked("skills")}>
-                skills
+                Skills
               </Menu.Item>
               <Menu.Item onClick={() => toggleButtonClicked("project")}>
                 Projects

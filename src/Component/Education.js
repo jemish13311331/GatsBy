@@ -26,7 +26,11 @@ export const Education = ({ data }) => {
                   <GatsbyImage
                     image={getImage(val?.frontmatter?.img1)}
                     alt="Hello Images"
-                    style={{ width: 70, height: 70, borderRadius: "50%" }}
+                    style={{
+                      width: 70,
+                      height: 70,
+                      borderRadius: "50%",
+                    }}
                   />
                 </div>
                 <div className="details">

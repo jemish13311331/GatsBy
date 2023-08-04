@@ -50,7 +50,10 @@ html {
   /* margin-left: auto;
   margin-right: auto; */
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .simple-box {
   display: flex;
   margin-left: auto;
@@ -235,6 +238,7 @@ hr {
 .ant-menu {
   background-color: rgb(227, 224, 234);
   color: purple;
+  font-size: large;
 }
 .ant-menu-item {
   color: purple;
