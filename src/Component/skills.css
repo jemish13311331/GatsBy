@@ -20,7 +20,7 @@ li::marker {
 .skill-image:hover {
   height: 50px;
   width: 70px;
-  box-shadow: 5px 6px rgb(202, 122, 202);
+  box-shadow: 3px 3px rgb(202, 122, 202);
   border-radius: 10%;
 }
 .skills-logo {

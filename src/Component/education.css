@@ -11,3 +11,8 @@
 .education {
   width: 50%;
 }
+.img1:hover {
+  box-shadow: 2px 2px rgb(202, 122, 202);
+  border-radius: 50%;
+  height: fit-content;
+}

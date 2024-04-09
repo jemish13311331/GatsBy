@@ -19,7 +19,7 @@
 .profile-pic:hover {
   /* border-radius: 50%; */
 
-  box-shadow: 8px 9px rgb(202, 122, 202);
+  box-shadow: 4px 3px rgb(202, 122, 202);
 }
 .description {
   text-align: center;
