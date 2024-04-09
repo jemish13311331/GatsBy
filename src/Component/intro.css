@@ -4,28 +4,41 @@
   margin-right: auto;
   width: fit-content;
   height: fit-content;
-  margin-top: 10px;
 }
 .ant-avatar-string {
   width: max-content;
   height: max-content;
 }
+.profile-pic {
+  /* border-radius: 50%; */
+  height: 350px;
+  width: 250px;
+  border: solid 1px purple;
+  border-radius: 10%;
+}
+.profile-pic:hover {
+  /* border-radius: 50%; */
 
+  box-shadow: 8px 9px rgb(202, 122, 202);
+}
 .description {
   text-align: center;
+  margin-left: 5px;
+  font-weight: lighter;
 }
 .top-intro {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: fit-content;
 }
 .name {
   color: purple;
-  font-weight: bolder;
   font-size: 30px;
 }
 .fname {
   color: purple;
-  font-weight: bolder;
   font-size: 55px;
 }
 

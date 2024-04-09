@@ -1,6 +1,8 @@
 import React from "react";
 import "./workexperience.css";
 import { Timeline } from "antd";
+import company from "../images/simform.webp";
+import { RocketFilled } from "@ant-design/icons";
 
 //component to render workexperience
 export const WorkExperience = ({ data }) => {
@@ -11,11 +13,17 @@ export const WorkExperience = ({ data }) => {
         color: "purple",
         label: val?.duration,
         children: (
-          <div>
-            <div>{val.name}</div>
+          <div className="company-description">
+            <div>
+              <a href="https://www.simform.com/" target="blank">
+                <img src={company} className="company-logo" />
+              </a>
+            </div>
+            <div className="company-details">
+              <div>{val.name}</div>
 
-            <div></div>
-            <div>{val.organization}</div>
+              <div>{val.organization}</div>
+            </div>
           </div>
         ),
       });
@@ -29,7 +37,10 @@ export const WorkExperience = ({ data }) => {
         <div className="line">
           <hr />
         </div>
-        <div>Work Experience</div>
+        <div>
+          <RocketFilled />
+        </div>
+        <div> Work Experience</div>
         <div className="line">
           <hr />
         </div>

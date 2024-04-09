@@ -12,3 +12,23 @@ li::marker {
   color: purple;
   border: 2pc solid purple;
 }
+.skill-image {
+  height: 53px;
+  width: 70px;
+}
+
+.skill-image:hover {
+  height: 50px;
+  width: 70px;
+  box-shadow: 5px 6px rgb(202, 122, 202);
+  border-radius: 10%;
+}
+.skills-logo {
+  display: flex;
+  flex-direction: row;
+  row-gap: 30px;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -7,13 +7,10 @@ import { Projects } from "../Component/Projects";
 import { Skills } from "../Component/Skills";
 import { WorkExperience } from "../Component/WorkExperience";
 import "./index.css";
-import InstagramOutlined from "@ant-design/icons/lib/icons/InstagramOutlined";
 import LinkedinOutlined from "@ant-design/icons/lib/icons/LinkedinOutlined";
 import GithubOutlined from "@ant-design/icons/lib/icons/GithubOutlined";
 import Typed from "typed.js";
 import MailOutlined from "@ant-design/icons/lib/icons/MailOutlined";
-import Icon from "@ant-design/icons/lib/components/Icon";
-import MenuOutlined from "@ant-design/icons/lib/icons/MenuOutlined";
 import { Menu } from "antd";
 import MenuFoldOutlined from "@ant-design/icons/lib/icons/MenuFoldOutlined";
 import MenuUnfoldOutlined from "@ant-design/icons/lib/icons/MenuUnfoldOutlined";
@@ -43,8 +40,8 @@ const IndexPage = () => {
             name
             date
             degree
-            major
             percentage
+            href
             skills
             projects {
               description

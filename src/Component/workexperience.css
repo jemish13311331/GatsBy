@@ -10,6 +10,17 @@
 
   width: 50%;
 }
+.company-logo {
+  height: 50px;
+  width: 50px;
+}
+
+.company-logo:hover {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px rgb(202, 122, 202);
+}
 
 .experience-table {
   margin-top: 10px;
@@ -26,4 +37,13 @@ table {
 }
 .wbox {
   margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.ant-timeline {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.company-description {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }

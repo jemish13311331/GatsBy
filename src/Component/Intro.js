@@ -3,26 +3,17 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import React, { Fragment } from "react";
 import "./intro.css";
 import { Avatar, Space } from "antd";
+import profile_img from "../images/profile_img.jpg";
 
 //component to render intro
 export const Intro = ({ data }) => {
   if (data) {
-    const image = getImage(data?.frontmatter?.img1);
+    const image = profile_img;
 
     return (
       <div className="top-intro">
         <div className="profileImage">
-          <Avatar
-            size={192}
-            icon={
-              <GatsbyImage
-                image={image}
-                alt="intro"
-                style={{ height: 200, width: 200 }}
-                loading="lazy"
-              />
-            }
-          />
+          <img src={profile_img} alt="intro" className="profile-pic" />
         </div>
         <div>
           <div className="titles">

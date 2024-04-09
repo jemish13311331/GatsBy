@@ -1,5 +1,5 @@
 .project-box {
-  width: 50%;
+  width: 90%;
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
   margin: 10px 10px 0px 10px;
@@ -7,10 +7,21 @@
 
 .project-table {
   margin-top: 10px;
-  border-bottom: 2px solid black;
+  font-weight: normal;
 }
 .project-table :hover {
   margin-top: 10px;
+}
+.project-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align Items Vertically */
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.project-item {
+  display: flex;
+  margin: 10px 0px 10px 0px;
 }
 
 tr {
@@ -25,4 +36,7 @@ table {
 }
 .title1 {
   color: purple;
+}
+.title2 {
+  font-weight: lighter;
 }

@@ -7,6 +7,7 @@ html {
   background-color: rgb(227, 224, 234);
   color: rgb(76, 73, 73);
   font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .customLoader {
   position: absolute;
@@ -29,10 +30,10 @@ html {
   align-content: start;
 }
 .projects {
+  width: fit-content;
 }
 .button {
-  font-weight: bold;
-  border: 2px solid purple;
+  border: 1.5px solid purple;
   border-radius: 8%;
   padding: 0.5%;
   width: fit-content;
@@ -105,7 +106,7 @@ a {
   bottom: 70px;
   right: 0;
   color: purple;
-  font-weight: bolder;
+
   font-size: 20px;
   rotate: 270deg;
 }
@@ -128,10 +129,10 @@ hr {
 .title {
   text-align: center;
   color: purple;
-  font-weight: bolder;
   font-size: larger;
   display: flex;
   flex-direction: row;
+  align-items: center;
   column-gap: 10px;
 }
 .loader {
@@ -206,6 +207,10 @@ hr {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+  }
+  .project-list {
+    display: flex;
+    flex-direction: column;
   }
   .wexperience-box {
     width: 100%;
