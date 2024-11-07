@@ -70,7 +70,7 @@ const IndexPage = () => {
   }
 
   function sendToGitHub() {
-    navigate("https://github.com/jemish-i-simformsolutions?tab=repositories");
+    window.open("https://github.com/jemish13311331", "_blank");
   }
   useEffect(() => {
     // image2=getImage(data?.allMdx?.nodes?.find(val=>val?.frontmatter?.title=="skills")?.frontmatter?.img1)
@@ -252,7 +252,10 @@ const IndexPage = () => {
           />
           <LinkedinOutlined
             onClick={() =>
-              navigate("https://www.linkedin.com/in/jemish-italiya-2644591b5/")
+              window.open(
+                "https://www.linkedin.com/in/jemish-italiya/",
+                "_blank",
+              )
             }
             style={{ fontSize: "30px" }}
           />
