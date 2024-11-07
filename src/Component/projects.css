@@ -17,7 +17,7 @@
   flex-direction: row;
   align-items: center; /* Align Items Vertically */
   justify-content: space-between;
-  border-bottom: 2px solid black;
+  border-bottom: 0.75px solid rgb(33, 150, 243);
 }
 .project-item {
   display: flex;
@@ -34,9 +34,7 @@ table {
   border-collapse: separate;
   border-spacing: 0 1em;
 }
-.title1 {
-  color: purple;
-}
+
 .title2 {
   font-weight: lighter;
 }

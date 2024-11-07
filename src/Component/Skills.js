@@ -41,7 +41,6 @@ export const Skills = ({ data }) => {
     return Object.keys(imgDictionary).map((val, index) => (
       <div>
         <div>
-          {/* {console.log("img" + i)} */}
           <img src={imgDictionary[val]} className="skill-image" />
         </div>
       </div>
@@ -55,7 +54,7 @@ export const Skills = ({ data }) => {
         </div>
         <div>
           {" "}
-          <SettingFilled style={{ color: "purple", marginRight: 5 }} />
+          <SettingFilled style={{ marginRight: 5 }} />
           Skills
         </div>
         <div className="line">

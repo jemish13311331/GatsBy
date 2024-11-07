@@ -3,6 +3,7 @@ import "./workexperience.css";
 import { Timeline } from "antd";
 import company from "../images/simform.webp";
 import { RocketFilled } from "@ant-design/icons";
+import compnay1 from "../../details/img/arizona-state-sun-devils-round-slimline-lighted-wall-sign-560943.webp";
 
 //component to render workexperience
 export const WorkExperience = ({ data }) => {
@@ -10,13 +11,20 @@ export const WorkExperience = ({ data }) => {
     let array = [];
     data?.frontmatter?.experience?.map((val, index) => {
       array.push({
-        color: "purple",
+        color: "rgb(33, 150, 243)",
         label: val?.duration,
         children: (
           <div className="company-description">
             <div>
-              <a href="https://www.simform.com/" target="blank">
-                <img src={company} className="company-logo" />
+              <a href={val?.href} target="blank">
+                <img
+                  src={
+                    val?.organization == "Arizona StateUniversity (EPICs)"
+                      ? compnay1
+                      : company
+                  }
+                  className="company-logo"
+                />
               </a>
             </div>
             <div className="company-details">
@@ -28,7 +36,6 @@ export const WorkExperience = ({ data }) => {
         ),
       });
     });
-    console.log(array);
     return array.reverse();
   }
   return (

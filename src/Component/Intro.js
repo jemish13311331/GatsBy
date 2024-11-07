@@ -1,9 +1,7 @@
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import React, { Fragment } from "react";
 import "./intro.css";
-import { Avatar, Space } from "antd";
-import profile_img from "../images/profile_img.jpg";
+import profile_img from "../images/profile_img.png";
 
 //component to render intro
 export const Intro = ({ data }) => {
@@ -24,7 +22,7 @@ export const Intro = ({ data }) => {
                 {data?.frontmatter?.name.substring(1)}
               </span>
             </div>
-            <div>({data?.frontmatter?.title})</div>
+            <div className="title-profession">({data?.frontmatter?.title})</div>
           </div>
           <div className="description">
             <MDXRenderer>{data?.body}</MDXRenderer>

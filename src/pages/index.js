@@ -53,6 +53,7 @@ const IndexPage = () => {
               name
               organization
               duration
+              href
             }
             img1 {
               childImageSharp {
@@ -247,17 +248,17 @@ const IndexPage = () => {
         <div className="icons">
           <MailOutlined
             onClick={() => sentoMail()}
-            style={{ fontSize: "30px", color: "purple" }}
+            style={{ fontSize: "30px" }}
           />
           <LinkedinOutlined
             onClick={() =>
               navigate("https://www.linkedin.com/in/jemish-italiya-2644591b5/")
             }
-            style={{ fontSize: "30px", color: "purple" }}
+            style={{ fontSize: "30px" }}
           />
           <GithubOutlined
             onClick={() => sendToGitHub()}
-            style={{ fontSize: "30px", color: "purple" }}
+            style={{ fontSize: "30px" }}
           />
         </div>
         <div className="email">

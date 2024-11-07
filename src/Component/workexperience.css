@@ -1,7 +1,5 @@
 .experience-box {
   margin: 10px 0px 0px 0px;
-
-  color: rgb(98, 95, 95);
 }
 
 .wexperience-box {
@@ -13,13 +11,13 @@
 .company-logo {
   height: 50px;
   width: 50px;
+  border-radius: 50%;
 }
 
 .company-logo:hover {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: 2px 2px rgb(202, 122, 202);
 }
 
 .experience-table {

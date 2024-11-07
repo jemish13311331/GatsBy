@@ -4,8 +4,6 @@ html {
   margin: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgb(227, 224, 234);
-  color: rgb(76, 73, 73);
   font-size: large;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -18,7 +16,7 @@ html {
   width: 300px;
   height: 300px;
   font-size: larger;
-  color: purple;
+  color: rgb(33, 150, 243);
   font-weight: bolder;
 }
 
@@ -33,8 +31,8 @@ html {
   width: fit-content;
 }
 .button {
-  border: 1.5px solid purple;
-  border-radius: 8%;
+  border-bottom: 1.15px solid rgb(33, 150, 243);
+  color: rgb(33, 150, 243);
   padding: 0.5%;
   width: fit-content;
   margin: 5px 10px 5px 0px;
@@ -45,7 +43,7 @@ html {
   flex-direction: row-reverse;
 }
 .button:hover {
-  box-shadow: 5px 6px rgb(202, 122, 202);
+  border-bottom: none;
 }
 .main-box {
   /* margin-left: auto;
@@ -100,12 +98,13 @@ a {
   align-items: flex-start; */
   position: fixed;
   bottom: 30px;
+  color: rgb(244, 67, 54);
 }
 .email {
   position: fixed;
   bottom: 70px;
   right: 0;
-  color: purple;
+  color: rgb(244, 67, 54);
 
   font-size: 20px;
   rotate: 270deg;
@@ -123,12 +122,12 @@ a {
 }
 hr {
   height: 2px;
-  background-color: purple;
+  background-color: rgb(33, 150, 243);
   border: none;
 }
 .title {
   text-align: center;
-  color: purple;
+
   font-size: larger;
   display: flex;
   flex-direction: row;
@@ -140,7 +139,6 @@ hr {
   top: 50%;
   left: 50%;
   font-weight: normal;
-  color: purple;
   font-size: 30px;
 }
 @media screen and (max-width: 1186px) {
@@ -153,7 +151,7 @@ hr {
     position: absolute;
     flex-direction: row-reverse;
     z-index: 100;
-    color: purple;
+    color: rgb(33, 150, 243);
   }
   .main-box {
     display: flex;
@@ -213,7 +211,7 @@ hr {
     right: 1%;
     flex-direction: row-reverse;
     z-index: 100;
-    color: purple;
+    color: rgb(33, 150, 243) e;
   }
   .ebox {
     display: flex;
@@ -253,21 +251,54 @@ hr {
     bottom: 15px;
     right: 10%;
     left: 97%;
-    color: purple;
     font-weight: normal;
     font-size: 20px;
     rotate: 270deg;
   }
 }
 .ant-menu {
-  background-color: rgb(227, 224, 234);
-  color: purple;
+  background-color: rgb(211, 229, 243);
+  color: rgb(33, 150, 243);
   font-size: large;
 }
 .ant-menu-item {
-  color: purple;
+  color: rgb(33, 150, 243);
 }
 .ant-menu-item:focus {
-  background-color: rgb(173, 158, 209);
-  color: purple;
+  background-color: rgb(33, 150, 243);
+  color: rgb(33, 150, 243);
+}
+
+html {
+  background: linear-gradient(
+    45deg,
+    rgb(187, 202, 223),
+    rgba(187, 202, 223, 0)
+  );
+
+  background-size: cover;
+  background-attachment: fixed;
+  /* Light Gray */
+  color: rgb(96, 96, 96); /* Charcoal */
+}
+.customLoader,
+.title {
+  color: rgb(33, 150, 243); /* Bright Blue */
+}
+
+hr,
+.line {
+  background-color: rgb(33, 150, 243);
+  height: 1.15px; /* Bright Blue */
+}
+.loader,
+.ant-menu,
+.ant-menu-item {
+  color: rgb(255, 87, 34); /* Vivid Orange */
+}
+.ant-menu-item:focus {
+  background-color: rgb(255, 213, 128); /* Soft Peach Background */
+}
+.ant-spin-dot-item {
+  background-color: rgb(244, 67, 54); /* Coral Red */
 }

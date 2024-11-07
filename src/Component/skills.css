@@ -1,5 +1,5 @@
 .skills {
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
   border-radius: 10px;
   /* box-shadow: 1px 1px #e9e9ec; */
   margin: 10px 0px 0px 10px;
@@ -9,8 +9,6 @@ ul {
   list-style-type: disc;
 }
 li::marker {
-  color: purple;
-  border: 2pc solid purple;
 }
 .skill-image {
   height: 53px;
@@ -18,10 +16,9 @@ li::marker {
 }
 
 .skill-image:hover {
-  height: 50px;
+  height: 55px;
   width: 70px;
-  box-shadow: 3px 3px rgb(202, 122, 202);
-  border-radius: 10%;
+  box-shadow: 1px 0.5px rgb(33, 150, 243);
 }
 .skills-logo {
   display: flex;
@@ -31,4 +28,5 @@ li::marker {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 10px;
 }

@@ -21,7 +21,6 @@ export const Education = ({ data }) => {
         </div>
       </div>
       <div>
-        {console.log(data?.allMdx?.nodes)}
         {data?.allMdx?.nodes
           ?.filter((val) => val?.frontmatter?.percentage !== null)
           ?.reverse()
