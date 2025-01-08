@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 const SSRPage = ({ serverData }) => (
   <main>
     <h1>SSR Page with Dogs</h1>
@@ -27,6 +28,15 @@ export async function getServerData() {
     };
   }
 }
-export const onRenderBody = ({ setHtmlAttributes }) => {
-  setHtmlAttributes({ lang: "en" });
+
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <Helmet>
+      <title>Jemish's Realm</title>
+      <meta
+        name="description"
+        content="This is the default description for pages on my site."
+      />
+    </Helmet>,
+  ]);
 };
