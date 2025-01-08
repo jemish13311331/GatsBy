@@ -3,8 +3,8 @@ require("dotenv").config({
 });
 module.exports = {
   siteMetadata: {
-    title: `learn-at-most-capacity`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Intro of Jemish`,
+    siteUrl: `https://luminous-daifuku-eb99fa.netlify.app/`,
   },
   plugins: [
     {
@@ -18,6 +18,12 @@ module.exports = {
       resolve: `gatsby-source-custom-api`,
       options: {
         apiKey: process.env.API_KEY,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/favicon.ico`,
       },
     },
     "gatsby-plugin-mdx",

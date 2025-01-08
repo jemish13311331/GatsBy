@@ -27,3 +27,6 @@ export async function getServerData() {
     };
   }
 }
+export const onRenderBody = ({ setHtmlAttributes }) => {
+  setHtmlAttributes({ lang: "en" });
+};

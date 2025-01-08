@@ -121,7 +121,11 @@ const IndexPage = () => {
         <Helmet>
           {" "}
           skills, project, experience, education
-          <meta charSet="utf-8" />
+          <meta
+            charSet="utf-8"
+            name="description"
+            content="This page s dedicated the listing of projects done by Jemish Italiya"
+          />
           <title>Jemish's Realm</title>
           <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
