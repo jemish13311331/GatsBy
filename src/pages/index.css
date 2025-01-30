@@ -16,7 +16,7 @@ html {
   width: 300px;
   height: 300px;
   font-size: larger;
-  color: rgb(33, 150, 243);
+  color: rgb(27, 20, 46);
   font-weight: bolder;
 }
 
@@ -31,8 +31,8 @@ html {
   width: fit-content;
 }
 .button {
-  border-bottom: 1.15px solid rgb(33, 150, 243);
-  color: rgb(33, 150, 243);
+  border-bottom: 1.15px solid rgb(27, 20, 46);
+  color: rgb(27, 20, 46);
   padding: 0.5%;
   width: fit-content;
   margin: 5px 10px 5px 0px;
@@ -122,7 +122,7 @@ a {
 }
 hr {
   height: 2px;
-  background-color: rgb(33, 150, 243);
+  background-color: rgb(27, 20, 46);
   border: none;
 }
 .title {
@@ -138,7 +138,7 @@ hr {
   position: absolute;
   top: 50%;
   left: 50%;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 30px;
 }
 @media screen and (max-width: 1186px) {
@@ -151,7 +151,7 @@ hr {
     position: absolute;
     flex-direction: row-reverse;
     z-index: 100;
-    color: rgb(33, 150, 243);
+    color: rgb(27, 20, 46);
   }
   .main-box {
     display: flex;
@@ -211,7 +211,7 @@ hr {
     right: 1%;
     flex-direction: row-reverse;
     z-index: 100;
-    color: rgb(33, 150, 243) e;
+    color: rgb(27, 20, 46) e;
   }
   .ebox {
     display: flex;
@@ -251,44 +251,40 @@ hr {
     bottom: 15px;
     right: 10%;
     left: 97%;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 20px;
     rotate: 270deg;
   }
 }
 .ant-menu {
   background-color: rgb(211, 229, 243);
-  color: rgb(33, 150, 243);
+  color: rgb(27, 20, 46);
   font-size: large;
 }
 .ant-menu-item {
-  color: rgb(33, 150, 243);
+  color: rgb(27, 20, 46);
 }
 .ant-menu-item:focus {
-  background-color: rgb(33, 150, 243);
-  color: rgb(33, 150, 243);
+  background-color: rgb(27, 20, 46);
+  color: rgb(27, 20, 46);
 }
 
 html {
-  background: linear-gradient(
-    45deg,
-    rgb(187, 202, 223),
-    rgba(187, 202, 223, 0)
-  );
-
+  background: linear-gradient(45deg, rgb(7, 6, 10), rgba(11, 9, 17, 0));
   background-size: cover;
   background-attachment: fixed;
   /* Light Gray */
-  color: rgb(96, 96, 96); /* Charcoal */
+  color: rgb(244, 236, 236); /* Charcoal */
+  font-weight: lighter;
 }
 .customLoader,
 .title {
-  color: rgb(33, 150, 243); /* Bright Blue */
+  color: rgb(27, 20, 46); /* Bright Blue */
 }
 
 hr,
 .line {
-  background-color: rgb(33, 150, 243);
+  background-color: rgb(27, 20, 46);
   height: 1.15px; /* Bright Blue */
 }
 .loader,

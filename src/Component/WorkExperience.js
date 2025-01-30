@@ -11,7 +11,7 @@ export const WorkExperience = ({ data }) => {
     let array = [];
     data?.frontmatter?.experience?.map((val, index) => {
       array.push({
-        color: "rgb(33, 150, 243)",
+        color: "rgb(27, 20, 46)",
         label: val?.duration,
         children: (
           <div className="company-description">

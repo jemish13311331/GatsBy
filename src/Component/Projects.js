@@ -32,7 +32,9 @@ export const Projects = ({ data }) => {
                 <table className="project-table">
                   <tbody>
                     <tr>
-                      <td>{val?.name + " (" + val?.organization + ")"}</td>
+                      <td className="project-title">
+                        {val?.name + " (" + val?.organization + ")"}
+                      </td>
                     </tr>
                     <tr>
                       <td className="title2">{val?.description}</td>

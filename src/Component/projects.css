@@ -17,7 +17,7 @@
   flex-direction: row;
   align-items: center; /* Align Items Vertically */
   justify-content: space-between;
-  border-bottom: 0.75px solid rgb(33, 150, 243);
+  border-bottom: 0.75px solid rgb(27, 20, 46);
 }
 .project-item {
   display: flex;
@@ -37,4 +37,8 @@ table {
 
 .title2 {
   font-weight: lighter;
+}
+
+.project-title {
+  color: rgb(27, 20, 46);
 }

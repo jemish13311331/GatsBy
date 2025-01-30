@@ -5,7 +5,7 @@
 .wexperience-box {
   padding: 10px 10px 0px 10px;
   border-radius: 10px;
-
+  color: white;
   width: 50%;
 }
 .company-logo {
@@ -22,7 +22,7 @@
 
 .experience-table {
   margin-top: 10px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid;
   border-width: inherit 100%;
 }
 .experience-table :hover {
@@ -44,4 +44,9 @@ table {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
+  color: aliceblue;
+  font-weight: normal;
+}
+.ant-timeline-item-label {
+  color: aliceblue;
 }

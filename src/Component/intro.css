@@ -11,14 +11,14 @@
 }
 .profile-pic {
   /* border-radius: 50%; */
-  height: 350px;
-  width: 250px;
-  border: 1.15px solid rgb(33, 150, 243);
+  height: 325px;
+  width: 270px;
+  border: 1.15px solid rgb(27, 20, 46);
 }
 .profile-pic:hover {
   /* border-radius: 50%; */
-  height: 355px;
-  width: 252px;
+  height: 330px;
+  width: 272px;
 
   border: none;
 }
@@ -48,7 +48,7 @@
   margin-right: auto;
   align-items: center;
   align-content: center;
-  color: rgb(33, 150, 243);
+  color: rgb(27, 20, 46);
 }
 /* .title-profession {
   color: rgb(244, 67, 54);

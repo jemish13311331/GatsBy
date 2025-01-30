@@ -183,7 +183,7 @@ const IndexPage = () => {
             >
               <Menu.Item>
                 <a
-                  href={`/static/Resume_Jemish.pdf`}
+                  href={`https://tinyurl.com/2f2uvvzs`}
                   target="_blank"
                   rel="noreferrer"
                   id="email"
